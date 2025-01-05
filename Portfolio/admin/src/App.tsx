@@ -17,7 +17,7 @@ export default function App() {
   useEffect(() => {
     const fetchContacts = async () => {
       try {
-        const response = await fetch('https://backend-d5db.onrender.com/contacts');
+        const response = await fetch('/contacts');
         const data: Contact[] = await response.json();
         setContacts(data);
       } catch (error: unknown) {

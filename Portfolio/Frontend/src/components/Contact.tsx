@@ -26,7 +26,7 @@ const Contact = () => {
     setSubmitWarning(false); // Reset warning message
     
     try {
-      const response = await fetch('https://backend-d5db.onrender.com/contact', {  // Corrected endpoint
+      const response = await fetch('https://localhost:5000/contact', {  // Corrected endpoint
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
